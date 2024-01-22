@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     .then((res) => res.json())
     .then((data) => {
         console.log(data);
-        var output = '<h2>Past Feedbacks</h2>';
+        var output = '<h2 class="lead mt3">Past Feedbacks</h2>';
         data.length > 0 ? data.forEach(feedback => {
             output += `
                     <div class="card my-3 w-75">
