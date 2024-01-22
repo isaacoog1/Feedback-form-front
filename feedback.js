@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
     .then((res) => res.json())
     .then((data) => {
         console.log(data);
-        var output = '';
-        data.forEach(feedback => {
+        var output = '<h2>Past Feedbacks</h2>';
+        data.length > 0 ? data.forEach(feedback => {
             output += `
-                    <div class="card my-3 w-75">
+                    <div class="card my-3 w-75 mx-auto">
                         <div class="card-body text-center">
                         ${feedback.message}
                         <div class="text-secondary mt2">
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div> 
                         `
-        })
+        }) : output += `<p class="lead mt3">There is no feedback</p>`
         feedbacks.innerHTML = output;
     })
     .catch((error) => {
