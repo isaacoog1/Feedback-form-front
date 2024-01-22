@@ -41,10 +41,15 @@ document
 
 span.onclick = function () {
   modal.style.display = "none";
+  window.location.href = 'feedback.html';
 };
 
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    window.location.href = 'feedback.html';
   }
 };
+
+
+
