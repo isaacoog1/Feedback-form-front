@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="card my-3 w-75">
                         <div class="card-body text-center text-dark">
                             ${feedback.message}
-                            <div class="text-secondary mt2">
+                            <div class="text-secondary mt3">
                                 By ${feedback.fullname} rated ${feedback.rating}
                             </div>
                         </div>
