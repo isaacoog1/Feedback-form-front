@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
         data.length > 0 ? data.forEach(feedback => {
             output += `
                     <div class="card my-3 w-75">
-                        <div class="card-body text-center">
-                        ${feedback.message}
-                        <div class="text-secondary mt2">
-                            By ${feedback.fullname} rated ${feedback.rating}
-                        </div>
+                        <div class="card-body text-center text-dark">
+                            ${feedback.message}
+                            <div class="text-secondary mt2">
+                                By ${feedback.fullname} rated ${feedback.rating}
+                            </div>
                         </div>
                     </div> 
                         `
