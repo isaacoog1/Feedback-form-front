@@ -160,3 +160,29 @@ body {
     font-size: 15px;
     text-align: center;
   }
+
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+        width: 80%;
+    }
+
+    .design {
+        display: none;
+    }
+
+    .design2 {
+       display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .wrapper {
+        width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .wrapper {
+        width: 80%;
+    }
+  }
