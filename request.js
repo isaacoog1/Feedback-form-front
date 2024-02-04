@@ -11,7 +11,8 @@ var span = document.getElementsByClassName("close")[0];
 //Listen for a submit event on the feedback form and make a POST request to the backend
 document
   .getElementById("feedback-form")
-  .addEventListener("submit", function () {
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
     //Get the current values of the input field and make an object template
     const dataToSend = {
       fullname: fullname.value,
